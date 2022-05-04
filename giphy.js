@@ -17,4 +17,7 @@ function getGiphy(query, apikey="lqxd1xSb2SU6PBWDI0hezzCOyIqF1bRA") {
         .then(function(response) {
             imgEl.src = response.data.images.original.url;
         })
+        .catch(function(err) {
+            console.error(err);
+        });
 }
